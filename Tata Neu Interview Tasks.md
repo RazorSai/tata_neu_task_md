@@ -1,13 +1,13 @@
 ﻿**A. Descriptive Questions:**
 
-\1. Can we nest the Scaffold widget? Why or Why not?
+1. Can we nest the Scaffold widget? Why or Why not?
 
 **Answer: Since every component in Flutter is widget, we can nest scaffolds. But it is not a good practice because, in nature, Scaffolds are meant to be use as a single component inside a single page as it loads all the basic material properties like primary colour, accent colour, etc., which are then used by the body of scaffold. Also, when we want to use tabbed interfaces like page view with bottom navigation bar, it is always good to wrap a single scaffold around the PageView widget.**
 
 
 
 
-\2. What are the different ways we can create a custom widget?
+2. What are the different ways we can create a custom widget?
 
 **Answer:**
 
@@ -18,7 +18,7 @@
 
 
 
-\3. How can I access platform(iOS or Android) specific code from Flutter?
+3. How can I access platform(iOS or Android) specific code from Flutter?
 
 **Answer: Flutter supports platform specific code (iOS or Android) using Method channels. Method channels are asynchronous and bidirectional calls, meaning users can perform other actions while method channels are executed and they can return values.  We can use method channels to access platform specific features, for example; calling camera app in Android using native Intent implementation on JAVA/Kotlin side and handling the calls using FlutterMethodChannel.**
 
@@ -26,7 +26,7 @@
 
 
 
-\4. What is BuildContext? What is its importance?
+4. What is BuildContext? What is its importance?
 
 **Answer: BuildContext are reference points for a widget in a widget tree. Each widget has a parent build context inside it’s build method.**
 
@@ -41,16 +41,16 @@
 
 **B. Coding Questions:**
 
-\1. Refactor the code below so that the children will wrap to the next line when the display width is small for them to fit.
+1. Refactor the code below so that the children will wrap to the next line when the display width is small for them to fit.
 
 **Answer: We can use a widget called Wrap in this scenario. Refer the below image for example**
 
-![](Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.001.png)
+![](https://raw.githubusercontent.com/RazorSai/tata_neu_task_md/master/Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.001.png)
 
 **From the above example, if we use row, we get render flex overflow error. To resolve this we use Wrap widget.**
 
 
-![](Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.002.png)**By using Wrap and settings it’s property “direction” as horizontal, it will wrap the widgets to the next line as soon as the display width gets small to fit all in one line.**
+![](https://raw.githubusercontent.com/RazorSai/tata_neu_task_md/master/Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.002.png)**By using Wrap and settings it’s property “direction” as horizontal, it will wrap the widgets to the next line as soon as the display width gets small to fit all in one line.**
 
 \------------------------------------------------------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@
 
 **Answer:**
 
-![](Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.003.png)
+![](https://raw.githubusercontent.com/RazorSai/tata_neu_task_md/master/Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.003.png)
 
 
 
@@ -78,13 +78,16 @@
 
 **Video for this problem statement is :- [https://drive.google.com/file/d/18i8td4qZUrP2MytS06MF-nwy7Ji8_iHU/view?usp=sharing**](https://drive.google.com/file/d/18i8td4qZUrP2MytS06MF-nwy7Ji8_iHU/view?usp=sharing)**
 
+**Video for this problem statement if above link does not work :- [https://raw.githubusercontent.com/RazorSai/tata_neu_task_md/master/Coding%20problem%20statement%202.mp4**](https://raw.githubusercontent.com/RazorSai/tata_neu_task_md/master/Coding%20problem%20statement%202.mp4)**
+
+
 **-----------------------------------------------------------------------------------------------------------------------**
 
 \3. In the below code, list1 declared with var, list2 with final and list3 with const. What is the difference between these lists? Will the last two lines compile?
 
 **Answer:**
 
-![](Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.004.png)
+![](https://raw.githubusercontent.com/RazorSai/tata_neu_task_md/master/Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.004.png)
 
 
 
@@ -102,7 +105,7 @@
 
 
 
-![](Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.005.png)
+![](https://raw.githubusercontent.com/RazorSai/tata_neu_task_md/master/Aspose.Words.9c708d88-17dd-4f7d-bf21-f728aa266deb.005.png)
 
 **“var” keyword is used when we declare variables whose values can be changed at any given type. “final” and “const” are both the same as in their values can be assigned only once. The major difference between “final” and “const” is how the values are assigned. “final” value is assigned at runtime while “const” value is assigned at compile time. For example, lets assume “final” as a box with n number of apples. We know that there are apples, but we don’t know how much are there. After opening, we would get to know the number of apples. Whereas in “const”, we have the count of the apple, i.e, 6 apples.**
 
